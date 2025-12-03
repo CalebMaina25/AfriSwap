@@ -1,0 +1,23 @@
+# Create the full structure
+mkdir -p \
+  frontend/src/{components,screens,services,utils,assets,styles} \
+  backend/{flows,models,services,utils,config,routes,middleware} \
+  docs/{api,setup,testing} \
+  testing/{unit,integration,e2e} \
+  sample-data/{documents,users,transactions} \
+  scripts \
+  .github/workflows
+
+# Create key files
+touch \
+  .env.example \
+  docker-compose.yml \
+  package.json \
+  frontend/package.json \
+  backend/package.json \
+  docs/SETUP.md \
+  docs/API.md \
+  docs/TESTING.md \
+  docs/JUDGE_GUIDE.md \
+  CONTRIBUTING.md \
+  CODE_OF_CONDUCT.md
