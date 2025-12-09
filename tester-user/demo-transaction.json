@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tx_001",
+    "type": "CROSS_BORDER_TRADE",
+    "from": "KES",
+    "to": "NGN",
+    "amount": 50000,
+    "rate": 0.25,
+    "fees": 500,
+    "savings": 2500,
+    "status": "completed",
+    "timestamp": "2024-01-15T10:30:00Z"
+  }
+]

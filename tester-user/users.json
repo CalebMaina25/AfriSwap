@@ -1,0 +1,30 @@
+{
+  "judge": {
+    "email": "judge@afriswap.demo",
+    "password": "Judge2024!",
+    "name": "Capstone Judge",
+    "country": "KE",
+    "role": "judge",
+    "wallet": {
+      "KES": 100000,
+      "NGN": 500000,
+      "GHS": 20000
+    }
+  },
+  "kenyan_exporter": {
+    "email": "exporter@afriswap.demo",
+    "password": "Export123!",
+    "name": "Aisha Kamau",
+    "country": "KE",
+    "business": "Kamau Textiles Ltd",
+    "tradeVolume": "medium"
+  },
+  "nigerian_importer": {
+    "email": "importer@afriswap.demo",
+    "password": "Import123!",
+    "name": "Chinedu Okoro",
+    "country": "NG",
+    "business": "Nigerian Fashion House",
+    "tradeVolume": "large"
+  }
+}
