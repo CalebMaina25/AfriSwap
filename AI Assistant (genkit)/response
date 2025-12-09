@@ -1,0 +1,20 @@
+{
+  "response": "To export goods to Ghana, you typically need:\n1. Commercial Invoice\n2. Packing List\n3. Certificate of Origin\n4. Bill of Lading\n5. Customs Declaration Form\n\nBased on your profile as a Kenyan textile exporter, I can help you generate these documents.",
+  "suggestedActions": [
+    {
+      "action": "GENERATE_INVOICE",
+      "label": "Generate Commercial Invoice",
+      "data": {}
+    },
+    {
+      "action": "CHECK_COMPLIANCE",
+      "label": "Check Ghana Import Regulations",
+      "data": {}
+    }
+  ],
+  "nextSteps": [
+    "Upload your existing documents for verification",
+    "Connect with Ghanaian importers in our network",
+    "Apply for trade financing if needed"
+  ]
+}

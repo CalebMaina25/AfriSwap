@@ -1,0 +1,12 @@
+{
+  "userId": "user_123",
+  "email": "user@example.com",
+  "accessToken": "firebase_id_token",
+  "wallet": {
+    "balances": {
+      "KES": 0,
+      "NGN": 0,
+      "GHS": 0
+    }
+  }
+}

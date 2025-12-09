@@ -1,0 +1,24 @@
+{
+  "userMetrics": {
+    "totalTrades": 15,
+    "successRate": 93.3,
+    "totalVolume": 2500000,
+    "costSavings": 125000,
+    "trustScore": 85
+  },
+  "recentActivity": [
+    {
+      "type": "TRADE_COMPLETED",
+      "amount": 50000,
+      "currency": "NGN",
+      "timestamp": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "CURRENCY_EXCHANGE",
+      "message": "Best time to convert KES to GHS is tomorrow 2PM",
+      "potentialSavings": 1500
+    }
+  ]
+}

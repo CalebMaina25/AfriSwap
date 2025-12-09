@@ -1,0 +1,16 @@
+{
+  "error": {
+    "code": "INSUFFICIENT_FUNDS",
+    "message": "Insufficient balance in KES wallet",
+    "details": {
+      "required": 10000,
+      "available": 8500,
+      "currency": "KES"
+    },
+    "suggestions": [
+      "Add funds to your wallet",
+      "Use partial exchange",
+      "Try P2P matching for better rate"
+    ]
+  }
+}

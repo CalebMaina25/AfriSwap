@@ -1,0 +1,3 @@
+cd backend
+npm run genkit:dev
+# Genkit server on http://localhost:3002

@@ -1,0 +1,3 @@
+cd backend
+npm run dev
+# Server starts on http://localhost:3001

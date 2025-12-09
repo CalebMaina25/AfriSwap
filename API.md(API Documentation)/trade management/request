@@ -1,0 +1,12 @@
+{
+  "type": "GOODS_EXPORT",
+  "counterpartyId": "user_456",
+  "amount": 50000,
+  "currency": "NGN",
+  "description": "Textile materials shipment",
+  "terms": {
+    "deliveryDays": 7,
+    "inspectionPeriod": 48
+  },
+  "documents": ["doc_123", "doc_456"]
+}

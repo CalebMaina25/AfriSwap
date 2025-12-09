@@ -1,0 +1,15 @@
+# Initialize Git
+git init
+
+# Add all files
+git add .
+
+# Initial commit
+git commit -m "Initial commit: Complete AfriSwap project structure"
+
+# Add remote (replace with your GitHub URL)
+git remote add origin https://github.com/YOUR_USERNAME/afriswap.git
+
+# Push to main branch
+git branch -M main
+git push -u origin main

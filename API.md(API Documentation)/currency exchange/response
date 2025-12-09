@@ -1,0 +1,20 @@
+{
+  "from": "KES",
+  "to": "NGN",
+  "amount": 10000,
+  "currentRate": 0.25,
+  "predictedRate": {
+    "bestRate": 0.252,
+    "bestTime": "2024-01-15T14:30:00Z",
+    "confidence": 0.85,
+    "savingsPotential": 200
+  },
+  "alternativeOptions": [
+    {
+      "type": "P2P_MATCH",
+      "rate": 0.253,
+      "savings": 300,
+      "matchCount": 3
+    }
+  ]
+}

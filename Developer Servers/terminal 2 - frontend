@@ -1,0 +1,4 @@
+cd frontend
+npm start
+# Expo Dev Tools open in browser
+# Scan QR code with Expo Go app

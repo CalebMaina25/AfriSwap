@@ -1,0 +1,8 @@
+# Frontend
+cd frontend
+npm start
+# Scan QR code with Expo Go app
+
+# Backend
+cd ../backend
+npm run dev

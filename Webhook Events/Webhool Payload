@@ -1,0 +1,13 @@
+{
+  "event": "trade.completed",
+  "timestamp": "2024-01-15T10:30:00Z",
+  "data": {
+    "tradeId": "trade_123",
+    "amount": 50000,
+    "currency": "NGN",
+    "buyerId": "user_123",
+    "sellerId": "user_456",
+    "fees": 500,
+    "netAmount": 49500
+  }
+}

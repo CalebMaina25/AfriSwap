@@ -1,0 +1,11 @@
+{
+  "email": "user@example.com",
+  "phone": "+254712345678",
+  "password": "secure_password",
+  "country": "KE",
+  "userType": "TRADER",
+  "businessInfo": {
+    "name": "African Textiles Ltd",
+    "type": "EXPORTER"
+  }
+}

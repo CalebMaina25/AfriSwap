@@ -1,0 +1,28 @@
+{
+  "documentId": "doc_123",
+  "type": "INVOICE",
+  "extractedData": {
+    "invoiceNumber": "INV-2024-001",
+    "date": "2024-01-15",
+    "amount": 50000,
+    "currency": "NGN",
+    "buyer": "Nigerian Textiles Ltd",
+    "seller": "Kenyan Fabrics Inc",
+    "items": [
+      {
+        "description": "African Print Fabric",
+        "quantity": 100,
+        "unitPrice": 500
+      }
+    ]
+  },
+  "validation": {
+    "valid": true,
+    "issues": [],
+    "compliance": {
+      "country": "NG",
+      "requirementsMet": true,
+      "missingFields": []
+    }
+  }
+}

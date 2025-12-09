@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Create main directory
+mkdir -p afriswap
+cd afriswap
+
+# Create all directories
+mkdir -p .github/workflows
+mkdir -p frontend/src/{components/{common,trade,wallet,ai},screens/{auth,main,trade},services/{api,firebase,genkit,vertexai},utils,assets/{images/{logos,flags,icons},fonts},styles,navigation,context,hooks}
+mkdir -p backend/src/{flows,models/{ml,database,blockchain},services/{auth,trade,payment,ai,compliance},routes,middleware,utils,config,tests/{unit,integration,fixtures}}
+mkdir -p docs/{api,setup,testing,architecture,compliance,capstone}
+mkdir -p testing/{unit/{frontend,backend},integration/{api,database},e2e/{mobile,web},performance/{load,stress}}
+mkdir -p sample-data/{documents,users,transactions,currencies,ai-models}
+mkdir -p scripts/{deploy,database,ai,utils}
+mkdir -p infrastructure/{terraform,kubernetes,docker}
+mkdir -p research/{market-analysis,user-research,technical-research,regulatory}
+mkdir -p assets/{diagrams,screenshots/{mobile,web},logos,demo/{video,slides,scripts}}
+
+# Create essential files
+touch .github/workflows/{ci.yml,deploy.yml,test.yml}
+touch frontend/src/{App.js,app.json,babel.config.js}
+touch backend/src/{server.js,.env.example,Dockerfile}
+touch docs/capstone/{JUDGE_GUIDE.md,DEMO_SCRIPT.md,PRESENTATION.md}
+touch .env.example .gitignore .eslintrc.js .prettierrc docker-compose.yml
+touch LICENSE README.md CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md CHANGELOG.md
+
+echo "Directory structure created successfully!"

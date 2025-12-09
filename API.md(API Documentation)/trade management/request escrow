@@ -1,0 +1,18 @@
+{
+  "tradeId": "trade_123",
+  "buyerId": "user_123",
+  "sellerId": "user_456",
+  "amount": 50000,
+  "currency": "NGN",
+  "releaseConditions": [
+    {
+      "type": "DELIVERY_CONFIRMATION",
+      "required": true
+    },
+    {
+      "type": "DOCUMENT_VERIFICATION",
+      "required": true
+    }
+  ],
+  "arbiterId": "arbiter_001"
+}

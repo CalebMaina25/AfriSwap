@@ -1,0 +1,9 @@
+{
+  "message": "What documents do I need to export to Ghana?",
+  "context": {
+    "userId": "user_123",
+    "currentTrade": "trade_123",
+    "userCountry": "KE",
+    "targetCountry": "GH"
+  }
+}

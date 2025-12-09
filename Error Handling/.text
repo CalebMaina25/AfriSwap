@@ -1,0 +1,19 @@
+Common Error Codes
+AUTH_REQUIRED: Authentication token missing or invalid
+
+INSUFFICIENT_FUNDS: Not enough balance for transaction
+
+TRADE_LIMIT_EXCEEDED: Daily/monthly limit reached
+
+DOCUMENT_VALIDATION_FAILED: Document doesn't meet requirements
+
+COUNTRY_RESTRICTION: Service not available in user's country
+
+AI_SERVICE_UNAVAILABLE: Genkit/Vertex AI service down
+
+Rate Limiting
+100 requests per minute per user
+
+1000 requests per minute per IP
+
+Special limits for currency exchange endpoints

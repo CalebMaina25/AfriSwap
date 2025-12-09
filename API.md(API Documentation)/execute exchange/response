@@ -1,0 +1,7 @@
+{
+  "fromCurrency": "KES",
+  "toCurrency": "NGN",
+  "amount": 10000,
+  "rateType": "PREDICTED_BEST",
+  "predictionId": "pred_123"
+}
