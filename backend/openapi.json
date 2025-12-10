@@ -3,23 +3,124 @@
   "info": {
     "title": "AfriSwap API",
     "version": "1.0.0",
-    "description": "Minimal OpenAPI spec for AfriSwap"
+    "description": "Currency exchange and trade management API for AfriSwap",
+    "contact": {
+      "name": "AfriSwap Team"
+    }
   },
+  "servers": [
+    {
+      "url": "http://localhost:3001",
+      "description": "Development"
+    },
+    {
+      "url": "https://api.afriswap.com",
+      "description": "Production"
+    }
+  ],
   "paths": {
+    "/": {
+      "get": {
+        "summary": "Welcome page",
+        "responses": {
+          "200": {
+            "description": "HTML welcome page"
+          }
+        }
+      }
+    },
     "/health": {
       "get": {
         "summary": "Health check",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Server is healthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string", "example": "OK" },
+                    "timestamp": { "type": "string", "format": "date-time" }
+                  }
+                }
+              }
+            }
           }
         }
       }
     },
     "/api/auth": {
       "get": {
-        "summary": "Auth root",
-        "responses": { "200": { "description": "Auth root" } }
+        "summary": "Auth module root",
+        "responses": {
+          "200": {
+            "description": "Auth module info"
+          }
+        }
+      }
+    },
+    "/api/trades": {
+      "get": {
+        "summary": "Trade module root",
+        "responses": {
+          "200": {
+            "description": "Trade module info"
+          }
+        }
+      }
+    },
+    "/api/wallet": {
+      "get": {
+        "summary": "Wallet module root",
+        "responses": {
+          "200": {
+            "description": "Wallet module info"
+          }
+        }
+      }
+    },
+    "/api/documents": {
+      "get": {
+        "summary": "Documents module root",
+        "responses": {
+          "200": {
+            "description": "Documents module info"
+          }
+        }
+      }
+    },
+    "/api/ai": {
+      "get": {
+        "summary": "AI module root",
+        "responses": {
+          "200": {
+            "description": "AI module info"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "OK" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "message": { "type": "string" },
+              "code": { "type": "string" }
+            }
+          }
+        }
       }
     }
   }
