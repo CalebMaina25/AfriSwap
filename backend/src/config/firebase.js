@@ -13,8 +13,7 @@ if (process.env.FIREBASE_KEY_JSON) {
   try {
     serviceAccount = require('../../firebase-key.json');
   } catch (err) {
-    // If the file isn't present but GOOGLE_APPLICATION_CREDENTIALS is set,
-    // let the SDK use application default credentials.
+    // If no file and GOOGLE_APPLICATION_CREDENTIALS is set, use applicationDefault
     if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
       admin.initializeApp({
         credential: admin.credential.applicationDefault()

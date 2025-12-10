@@ -12,8 +12,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@adk/components": "^1.0.0",
-    "@adk/icons": "^1.0.0",
     "expo": "~49.0.0",
     "expo-camera": "~13.4.0",
     "expo-image-picker": "~14.3.0",
