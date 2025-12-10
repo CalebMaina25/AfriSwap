@@ -1,6 +1,7 @@
 const admin = require('firebase-admin');
 
 let serviceAccount;
+let initialized = false;
 
 if (process.env.FIREBASE_KEY_JSON) {
   try {
@@ -15,16 +16,28 @@ if (process.env.FIREBASE_KEY_JSON) {
   } catch (err) {
     // If no file and GOOGLE_APPLICATION_CREDENTIALS is set, use applicationDefault
     if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-      admin.initializeApp({
-        credential: admin.credential.applicationDefault()
-      });
-    } else {
+      try {
+        admin.initializeApp({
+          credential: admin.credential.applicationDefault()
+        });
+        initialized = true;
+      } catch (err2) {
+        // Silently fail for testing environments
+        if (process.env.NODE_ENV === 'test') {
+          console.warn('Firebase not initialized (test mode)');
+        } else {
+          throw err2;
+        }
+      }
+    } else if (process.env.NODE_ENV !== 'test') {
       throw new Error('No Firebase credentials found. Set FIREBASE_KEY_JSON or provide firebase-key.json');
+    } else {
+      console.warn('Firebase not initialized (test mode)');
     }
   }
 }
 
-if (!admin.apps.length) {
+if (!initialized && !admin.apps.length) {
   if (serviceAccount) {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
@@ -33,8 +46,8 @@ if (!admin.apps.length) {
   }
 }
 
-const db = admin.firestore();
-const auth = admin.auth();
-const storage = admin.storage();
+const db = admin.apps.length ? admin.firestore() : null;
+const auth = admin.apps.length ? admin.auth() : null;
+const storage = admin.apps.length ? admin.storage() : null;
 
 module.exports = { admin, db, auth, storage };
