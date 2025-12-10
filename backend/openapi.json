@@ -1,0 +1,26 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AfriSwap API",
+    "version": "1.0.0",
+    "description": "Minimal OpenAPI spec for AfriSwap"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth": {
+      "get": {
+        "summary": "Auth root",
+        "responses": { "200": { "description": "Auth root" } }
+      }
+    }
+  }
+}
